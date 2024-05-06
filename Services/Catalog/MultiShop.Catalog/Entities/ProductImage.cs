@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using MultiShop.Catalog.Entities;
 
 namespace MultiShop.Catalog.Entites
 {
