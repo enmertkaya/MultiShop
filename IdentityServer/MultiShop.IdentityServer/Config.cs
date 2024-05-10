@@ -22,7 +22,7 @@ namespace MultiShop.IdentityServer
            //new ApiResource("ResourceImage"){Scopes={ "ImageFullPermission" } },
            //new ApiResource("ResourceOcelot"){Scopes={"OcelotFullPermission"} },
            //new ApiResource("ResourceMessage"){Scopes={"MessageFullPermission"} },
-           //new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
+           new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
 
         public static IEnumerable<IdentityResource> IdentityResources => new IdentityResource[]
@@ -45,7 +45,7 @@ namespace MultiShop.IdentityServer
             //new ApiScope("ImageFullPermission","Full authority for image operations"),
             //new ApiScope("OcelotFullPermission","Full authority for ocelot operations"),
             //new ApiScope("MessageFullPermission","Full authority for message operations"),
-            //new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
+            new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
 
         public static IEnumerable<Client> Clients => new Client[]
