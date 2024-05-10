@@ -9,15 +9,15 @@
     }
   },
   "profiles": {
-    "http": {
+    "MultiShop.Discount": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5128",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:7071;"
     },
     "IIS Express": {
       "commandName": "IISExpress",
