@@ -37,15 +37,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{4A7BDDD8-44DD-4A0C-93A3-C24DE4C0D893}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.BusinessLayer", "Services\Cargo\MultiShop.Cargo.BusinessLayer\MultiShop.Cargo.BusinessLayer.csproj", "{D0E13E55-C0F7-43E3-B635-DF407C0B0C50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.BusinessLayer", "Services\Cargo\MultiShop.Cargo.BusinessLayer\MultiShop.Cargo.BusinessLayer.csproj", "{D0E13E55-C0F7-43E3-B635-DF407C0B0C50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.EntityLayer", "Services\Cargo\MultiShop.Cargo.EntityLayer\MultiShop.Cargo.EntityLayer.csproj", "{D5C0DF0E-2EFE-415A-90DD-7078D9557771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.EntityLayer", "Services\Cargo\MultiShop.Cargo.EntityLayer\MultiShop.Cargo.EntityLayer.csproj", "{D5C0DF0E-2EFE-415A-90DD-7078D9557771}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.DataAccessLayer", "Services\Cargo\MultiShop.Cargo.DataAccessLayer\MultiShop.Cargo.DataAccessLayer.csproj", "{4EAD9E23-5FD2-473E-8B7E-6E8A8962BBE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.DataAccessLayer", "Services\Cargo\MultiShop.Cargo.DataAccessLayer\MultiShop.Cargo.DataAccessLayer.csproj", "{4EAD9E23-5FD2-473E-8B7E-6E8A8962BBE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.DtoLayer", "Services\Cargo\MultiShop.Cargo.DtoLayer\MultiShop.Cargo.DtoLayer.csproj", "{6F7F87A0-7FA2-4BDC-B54E-0BC36034F4F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.DtoLayer", "Services\Cargo\MultiShop.Cargo.DtoLayer\MultiShop.Cargo.DtoLayer.csproj", "{6F7F87A0-7FA2-4BDC-B54E-0BC36034F4F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.WebApi", "Services\Cargo\MultiShop.Cargo.WebApi\MultiShop.Cargo.WebApi.csproj", "{E7FA0D90-DB70-4B2C-AE63-DBDB0E2F0C44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.WebApi", "Services\Cargo\MultiShop.Cargo.WebApi\MultiShop.Cargo.WebApi.csproj", "{E7FA0D90-DB70-4B2C-AE63-DBDB0E2F0C44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{E34F26E4-401B-481E-9634-1EE0E34F772F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Basket", "Services\Basket\MultiShop.Basket\MultiShop.Basket.csproj", "{33BE6A31-2878-404F-A2FF-337C368EF3DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +105,10 @@ Global
 		{E7FA0D90-DB70-4B2C-AE63-DBDB0E2F0C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7FA0D90-DB70-4B2C-AE63-DBDB0E2F0C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7FA0D90-DB70-4B2C-AE63-DBDB0E2F0C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33BE6A31-2878-404F-A2FF-337C368EF3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BE6A31-2878-404F-A2FF-337C368EF3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BE6A31-2878-404F-A2FF-337C368EF3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BE6A31-2878-404F-A2FF-337C368EF3DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +133,8 @@ Global
 		{4EAD9E23-5FD2-473E-8B7E-6E8A8962BBE5} = {4A7BDDD8-44DD-4A0C-93A3-C24DE4C0D893}
 		{6F7F87A0-7FA2-4BDC-B54E-0BC36034F4F9} = {4A7BDDD8-44DD-4A0C-93A3-C24DE4C0D893}
 		{E7FA0D90-DB70-4B2C-AE63-DBDB0E2F0C44} = {4A7BDDD8-44DD-4A0C-93A3-C24DE4C0D893}
+		{E34F26E4-401B-481E-9634-1EE0E34F772F} = {3F458549-AF97-44A2-A10F-7FD8102B8F5D}
+		{33BE6A31-2878-404F-A2FF-337C368EF3DE} = {E34F26E4-401B-481E-9634-1EE0E34F772F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96B4E904-61F4-4DDA-8A6D-C953067E2C50}
