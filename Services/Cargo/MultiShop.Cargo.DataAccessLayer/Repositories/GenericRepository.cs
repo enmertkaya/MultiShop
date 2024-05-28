@@ -26,12 +26,6 @@ namespace MultiShop.Cargo.DataAccessLayer.Repositories
             var values = _context.Set<T>().ToList();
             return values;
         }
-
-        public List<T> GetAll(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public T GetById(int id)
         {
             var value = _context.Set<T>().Find(id);
