@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Order.Application
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Order.Persistence", "Services\Order\Infrastructure\MultiShop.Order.Persistence\MultiShop.Order.Persistence.csproj", "{C31FA385-53E0-4E51-9355-4E7DDCA94053}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Order.WebApi", "Services\Order\Presentation\MultiShop.Order.WebApi\MultiShop.Order.WebApi.csproj", "{CEAA73C7-15DC-4609-B86A-955AE4F9E32C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Order.WebApi", "Services\Order\Presentation\MultiShop.Order.WebApi\MultiShop.Order.WebApi.csproj", "{37106332-65D1-4F61-884A-2B1C24B4A11A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +55,10 @@ Global
 		{C31FA385-53E0-4E51-9355-4E7DDCA94053}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C31FA385-53E0-4E51-9355-4E7DDCA94053}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C31FA385-53E0-4E51-9355-4E7DDCA94053}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CEAA73C7-15DC-4609-B86A-955AE4F9E32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEAA73C7-15DC-4609-B86A-955AE4F9E32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEAA73C7-15DC-4609-B86A-955AE4F9E32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEAA73C7-15DC-4609-B86A-955AE4F9E32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37106332-65D1-4F61-884A-2B1C24B4A11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37106332-65D1-4F61-884A-2B1C24B4A11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37106332-65D1-4F61-884A-2B1C24B4A11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37106332-65D1-4F61-884A-2B1C24B4A11A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +75,6 @@ Global
 		{54AE3337-4E7F-4309-B5E5-D760E7137D9F} = {1735470E-62F3-4BDD-9DFB-DC349BA8CA88}
 		{0B1C8B80-CCB7-4985-9640-AFEB657482EE} = {1735470E-62F3-4BDD-9DFB-DC349BA8CA88}
 		{C31FA385-53E0-4E51-9355-4E7DDCA94053} = {22194BE6-47E4-461A-A069-4CD4CFCD5966}
-		{CEAA73C7-15DC-4609-B86A-955AE4F9E32C} = {B051A30F-67C9-4025-A7EB-BD5888EA6990}
+		{37106332-65D1-4F61-884A-2B1C24B4A11A} = {B051A30F-67C9-4025-A7EB-BD5888EA6990}
 	EndGlobalSection
 EndGlobal
