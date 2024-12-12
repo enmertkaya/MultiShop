@@ -61,7 +61,8 @@ public static class Config
             {
                 ClientId="MultiShopAdminId",
                 ClientName="Multi Shop Admin User",
-                AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
+                AllowedGrantTypes=GrantTypes.ClientCredentials,
+                //AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
                 ClientSecrets={new Secret("multishopsecret".Sha256()) },
                 AllowedScopes={ "CatalogFullPermission", "CatalogReadPermission", "DiscountFullPermission", "OrderFullPermisson",
                 IdentityServerConstants.LocalApi.ScopeName,
