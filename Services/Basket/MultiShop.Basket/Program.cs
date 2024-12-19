@@ -10,7 +10,8 @@ using System.IdentityModel.Tokens.Jwt;
 var builder = WebApplication.CreateBuilder(args);
 
 var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
-JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
+//JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
+JwtSecurityTokenHandler.DefaultMapInboundClaims = false; //8 sonrasý sürümler icin gecerli
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
 {
