@@ -1,4 +1,4 @@
-﻿@model List<MultiShop.DtoLayer.CatalogDtos.CategoryDtos.ResultCategoryDto>
+﻿@model List<ResultProductDto>
 
 @{
     ViewData["Title"] = "Index";
@@ -18,31 +18,30 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Kategori Adı</th>
-                                <th>Kategoriye Ait Ürünler</th>
+                                <th>Ürün Adı</th>
+                                <th>Ürün Fiyatı</th>
                                 <th>Sil</th>
                                 <th>Güncelle</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach( var item in Model)
+                            @foreach (var item in Model)
                             {
                                 count++;
                                 <tr>
                                     <th scope="row">@count</th>
-                                    <td>@item.CategoryName</td>
-                                    <td><a href="#" class="btn btn-warning">Kategoriye Ait Ürünler</a></td>
-                                    <td><a href="/Admin/Category/DeleteCategory/@item.CategoryID" class="btn btn-danger">Sil</a></td>
-                                    <td><a href="/Admin/Category/UpdateCategory/@item.CategoryID" class="btn btn-success">Güncelle</a></td>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.ProductPrice</td>
+                                    <td><a href="/Admin/Product/DeleteProduct/@item.ProductId" class="btn btn-danger">Sil</a></td>
+                                    <td><a href="/Admin/Product/UpdateProduct/@item.ProductId" class="btn btn-success">Güncelle</a></td>
                                 </tr>
                             }
                         </tbody>
                     </table>
-                    <td><a href="/Admin/Category/CreateCategory" class="btn btn-primary">Yeni Kategori Girişi</a></td>
+                    <td><a href="/Admin/Product/CreateProduct" class="btn btn-primary">Yeni Ürün Girişi</a></td>
                 </div>
             </div>
         </div>
 
     </div>
 </section>
-
