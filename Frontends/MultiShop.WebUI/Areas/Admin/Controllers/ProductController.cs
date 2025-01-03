@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using MultiShop.DtoLayer.CatalogDtos.CategoryDtos;
 using MultiShop.DtoLayer.CatalogDtos.ProductDtos;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace MultiShop.WebUI.Areas.Admin.Controllers
 {
@@ -45,6 +46,10 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
         [Route("CreateProduct")]
         public async Task<IActionResult> CreateProduct()
         {
+            ViewBag.v1 = "Ana Sayfa";
+            ViewBag.v2 = "Ürünler";
+            ViewBag.v3 = "Ürünler Listesi";
+            ViewBag.v0 = "Ürünler İşlemleri";
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync("http://localhost:7070/api/Categories");
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -57,6 +62,21 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
                                                     }).ToList();
             ViewBag.CategoryValues = categoryValues;
 
+            return View();
+        }
+
+        [HttpPost]
+        [Route("CreateProduct")]
+        public async Task<IActionResult> CreateProduct(CreateProductDto createProductDto)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(createProductDto);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PostAsync("http://localhost:7070/api/Products", stringContent);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index", "Product", new { area = "Admin" });
+            }
             return View();
         }
     }
